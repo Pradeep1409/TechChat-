@@ -12,6 +12,13 @@
     "routes": [
         { "src": "/(.*)", "dest": "index.js" },
         { "src": "/(.*)", "dest": "build/index.html" }
-    ]
+    ],
+      "functions": {
+        "api/contact": {
+          "runtime": "nodejs16",
+          "memory": 256,
+          "maxDuration": 30
+        }
+      }
   }
   
